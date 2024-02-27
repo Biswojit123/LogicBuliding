@@ -11,14 +11,34 @@ public class StringRevers {
             String str = sc.nextLine();
 
             //Here we perfrom Revers given String
-            //use the toCharArray() method 
+            //use the toCharArray() method
+            
 
-            char str1[] = str.toCharArray();
-
+            //Approach-1
+            char str1[] = str.toCharArray();           
             //Here we travel the char array to print revers
             for(int i = str1.length-1 ; i >= 0 ; i--) {
                 System.out.print(str1[i]);
             }
+
+            System.out.println();
+            
+            //Approach-2
+            for(int i = str.length()-1 ;  i >= 0 ; i--) {
+                System.out.print(str.charAt(i));
+            }
+
+            System.out.println();
+
+            //Approach-3
+            StringBuffer br = new StringBuffer(str);
+            System.out.print(br.reverse());
+
+            System.out.println();
+
+            //Approach-4
+            StringBuilder br1 = new StringBuilder(str);
+            System.out.print(br1.reverse());
        }
     }
 }
