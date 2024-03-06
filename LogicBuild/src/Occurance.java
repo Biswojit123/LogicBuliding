@@ -12,6 +12,8 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Map.Entry;
+
 
 public class Occurance {
     public static void main(String []args) {
@@ -41,6 +43,14 @@ public class Occurance {
             }
             System.out.println("Numbers of time charactre will occure :");
             System.out.println(map);
+
+            System.out.println("First non- repeated character :");
+            for(Entry<Character,Integer> entrySets : map.entrySet()) {
+                if(entrySets.getValue() == 1) {
+                    System.out.println(entrySets.getKey());
+                    break;
+                }
+            }
 
         }
 

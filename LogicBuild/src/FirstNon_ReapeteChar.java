@@ -34,6 +34,7 @@ public class FirstNon_ReapeteChar {
                     break;
                 }
             }
+            
         }
     }
 }
